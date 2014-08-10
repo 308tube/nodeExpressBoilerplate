@@ -3,6 +3,7 @@
 Nodejs boilerplate template for building fast, robust, and adaptable web apps or sites. 
 
 This template covers the follow foundational base
+
 1. logging with winston
 2. reading files with fsConfig.js
 3. authentication with passport
@@ -12,6 +13,7 @@ This template covers the follow foundational base
 Quick start to starting a nodejs express application
 
 To run unit test
+
 1. open command prompt
 2. navigate to project folder
 3. type: "nodeunit test"
@@ -25,6 +27,7 @@ Open Source: MIT
 Requires nodejs, Git
 
 NPM Modules
+
 1. https://www.npmjs.org/package/express
 2. https://www.npmjs.org/package/hjs
 3. https://www.npmjs.org/package/cryptr 
