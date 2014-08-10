@@ -1,0 +1,18 @@
+{
+  "name": "nodeExpressBoilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cryptr": "^1.0.0",
+    "express": "3.2.6",
+    "hjs": "*",
+    "nodeunit": "^0.9.0",
+    "passport": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.40.0",
+    "winston": "^0.7.3"
+  }
+}
