@@ -1,6 +1,6 @@
 {
   "name": "nodeExpressBoilerplate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -14,5 +14,25 @@
     "passport-local": "^1.0.0",
     "request": "^2.40.0",
     "winston": "^0.7.3"
-  }
+  },
+  "description": "Nodejs boilerplate template for building fast, robust, and adaptable web apps or sites.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/308tube/nodeExpressBoilerplate"
+  },
+  "keywords": [
+    "nodejs template",
+    "nodejs boilerplate"
+  ],
+  "author": "308tube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/308tube/nodeExpressBoilerplate/issues"
+  },
+  "homepage": "https://github.com/308tube/nodeExpressBoilerplate"
 }
