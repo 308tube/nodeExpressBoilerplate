@@ -51,6 +51,12 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'hjs');
 app.use(express.favicon());
 
+/*
+ * static files file images and html files
+ * note: when place this far up top, passport will not track public folder
+ */
+app.use(express.static(path.join(__dirname, 'public')));
+
 //environment configuration needed for passport (authentication), order does matter
 app.use(express.bodyParser());
 app.use(express.cookieParser());
@@ -58,10 +64,16 @@ app.use(express.session({ secret: crypto.randomBytes(20).toString('hex') })); //
 app.use(passport.initialize());
 app.use(passport.session());
 
-//set remaining environments configuration
+/*
+ * http://stackoverflow.com/questions/8378338/what-does-connect-js-methodoverride-do
+ * 
+ * If you want to simulate DELETE and PUT, methodOverride is for that.
+ * If you pass in the _method post parameter set to 'delete' or 'put', 
+ * then you can use app.delete and app.put in Express instead of using 
+ * app.post all the time (thus more descriptive, verbose):
+ */
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
 
 /**
  * start defining routes

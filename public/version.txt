@@ -1,1 +1,9 @@
+version 1.0.0
+	improve passport auth code
+	moved public static folder up the chain in app.js
+	
+History
+-------
+
 version 0.0.1
+	initial version
